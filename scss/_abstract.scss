@@ -1,0 +1,14 @@
+@mixin media($screensize){
+    @if($screensize == xlarge){
+        @media(max-width:1280px){@content}
+    }
+    @if($screensize == large){
+        @media(max-width:991px){@content}
+    }
+    @if($screensize == medium){
+        @media(max-width:768px){@content}
+    }
+    @if($screensize == small){
+        @media(max-width:576px){@content}
+    }
+}
